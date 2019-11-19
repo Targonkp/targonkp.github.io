@@ -1,0 +1,13 @@
+{
+  "scripts": {
+    "serve": "browser-sync start -s \"src\" -f \".\"",
+    "build": "webpack -p",
+    "watch": "webpack --watch"
+  },
+  "dependencies": {
+    "webpack": "^4.41.0"
+  },
+  "devDependencies": {
+    "webpack-cli": "^3.3.9"
+  }
+}
