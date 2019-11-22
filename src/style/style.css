@@ -19,7 +19,7 @@ header {
 .base {
     padding: 0 0 190px 0;
     width: 100%;
-    background: url("../../images/Color-Fill-1.jpg") center center no-repeat;
+    background: url("../images/Color-Fill-1.jpg") center center no-repeat;
     background-size: cover;
     position: relative;
 }
@@ -83,8 +83,13 @@ display: inline;
     transition: 0.5s;
 }
 
-.meny-center > ul > li > a:hover{
-    color:#000000;
+.meny-center a:hover {
+    color: #000000;
+    transition: 0.5s;
+}
+.meny2-right a:hover,
+.meny-3-left a:hover {
+    color: #8cb713;
     transition: 0.5s;
 }
 
@@ -99,7 +104,7 @@ display: inline;
 }
 
 .sign {
-    border:1px solid white;
+    border:1px solid #ffffff;
     font-size: 12px;
     line-height: 25px;
     cursor: pointer;
@@ -107,9 +112,17 @@ display: inline;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: #ffffff;
     margin-top: 55px;
-   margin-left: auto;
+    margin-left: auto;
+    transition: 0.4s;
+}
+
+.sign:hover{
+    border:1px solid #000000;
+    color:black;
+    background:#ffffff;
+    transition: 0.4s;
 }
 
 .wrap {
@@ -197,7 +210,7 @@ text-transform: uppercase;
     width:75%;
     padding-bottom: 40%;
     box-shadow: 0 10px 20px black;
-    background: url("../../images/Rounded-Rectangle-2-copy.jpg");
+    background: url("../images/Rounded-Rectangle-2-copy.jpg");
     background-size: cover;
     border-radius: 5px;
     position: relative;
@@ -300,11 +313,19 @@ display: flex;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: #ffffff;
     font-size: 15px;
     font-weight: 700;
     box-shadow: 0 5px 5px rgba(0,0,0,0.15);
     border-radius: 3px;
+    transition: 0.4s;
+}
+
+
+.section-1-button > a:hover{
+    background:#ffffff;
+    color:#1de9b6;
+    transition: 0.4s;
 }
 
 .section-1-text2 > ul {
@@ -353,6 +374,8 @@ display: flex;
 .count{
     width: 25%;
     height: 140px;
+    cursor: pointer;
+    transition: 0.4s;
 }
 
 .count:nth-child(1){
@@ -370,6 +393,12 @@ display: flex;
 .count:nth-child(4){
 background: #ea80fc;
 }
+
+.count:hover{
+    background: #ffa027;
+    transition: 0.4s;
+}
+
 .count-1{
     height: 140px;
     display: flex;
@@ -544,7 +573,7 @@ padding: 5px 0 120px 0;
 }
 
 .section-4 {
-    background: url("../../images/Rectangle-1-copy-3.png") center center;
+    background: url("../images/Rectangle-1-copy-3.png") center center;
     background-size: cover;
 }
 
@@ -854,6 +883,13 @@ margin-right: 0;
     line-height: 30px;
     font-weight: 500;
     margin-left: auto;
+    transition: 0.4s;
+}
+
+.section-6-text3-button a:hover{
+    color: #1de9b6;
+    background: #ffffff;
+    transition: 0.4s;
 }
 
 .section-6-text3-check {
@@ -893,7 +929,6 @@ margin-right: 0;
     justify-content: flex-end;
     align-items: center;
 }
-
 
 .meny2-right > ul{
     list-style: none;
@@ -935,7 +970,7 @@ margin-right: 0;
 }
 
 .meny-3-left > ul > li::before{
-    content: url("../../images/Ellipse.png");
+    content: url('../images/Ellipse.png');
     position: absolute;
     left:18px;
 
